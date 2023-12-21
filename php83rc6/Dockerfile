@@ -18,5 +18,3 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /home/app/src
-
-

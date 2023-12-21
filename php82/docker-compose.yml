@@ -1,0 +1,12 @@
+version: "3"
+services:
+    app:
+        build: .
+        user: app
+        container_name: php82demo
+        working_dir: /home/app/src
+        volumes:
+            - ./:/home/app/src
+        environment:
+            - SAMPLE_ENV_VAR=xxx
+        #tty: true
