@@ -1,2 +1,3 @@
-# docker
-Repo for docker containers
+# Docker
+
+Repo for sample Docker containers
