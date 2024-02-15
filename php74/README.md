@@ -6,7 +6,7 @@
 
 ## Enter container
 
-`docker exec -it php74demo bash`
+`docker exec -it php82demo bash`
 
 ## Stop container
 

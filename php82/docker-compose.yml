@@ -1,9 +1,9 @@
-version: "3"
+version: "1"
 services:
     app:
         build: .
         user: app
-        container_name: php82demo
+        container_name: php82
         working_dir: /home/app/src
         volumes:
             - ./:/home/app/src
