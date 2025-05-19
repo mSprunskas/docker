@@ -1,0 +1,10 @@
+version: "1"
+services:
+    app:
+        build: .
+        container_name: php84
+        working_dir: /home/app/src
+        volumes:
+            - ./:/home/app/src
+        environment:
+            - SAMPLE_ENV_VAR=xxx

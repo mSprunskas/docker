@@ -1,4 +1,4 @@
-FROM php:8.3.0RC6-fpm-alpine3.18
+FROM php:8.4-fpm-alpine
 
 RUN apk add --update \
     autoconf \
@@ -18,6 +18,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Create separate user for app
-RUN useradd -ms /bin/bash app
+RUN adduser -D -s /bin/sh app
 
 WORKDIR /home/app/src
